@@ -2,6 +2,7 @@
 This repo is an implementation of MTCNN face recognition
 
 ## Requirements
+Ran on Windows 10 
 ```bash
 pip install tensorflow=1.14.0
 pip install mtcnn
@@ -10,9 +11,10 @@ pip install opencv-python
 
 ## Usage
 Make sure you installed the requirements and cloned the repo.
-````python
-D:\face>python cam.py   # for web cam
-D:\face>python image.py # for images
+To run the code, just do 
+````
+>python cam.py   # for web cam
+>python image.py # for images
 ````
 
 ## Technique used
