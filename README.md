@@ -8,6 +8,13 @@ pip install mtcnn
 pip install opencv-python
 ```
 
+## Usage
+Make sure you installed the requirements and cloned the repo.
+````python
+python cam.py   # for web cam
+python image.py # for images
+````
+
 ## Technique used
   It uses transfer learning to recognize faces from a video or image, the MTCNN is trained on [WIDER FACE](http://shuoyang1213.me/WIDERFACE/) dataset and the weights are stored in and passed as default weights if no specefic weights file in given during the instaciation. These weights are then used to predict the faces in real time
   
@@ -23,4 +30,7 @@ weight_losses_cls = net.get_weight_decay()['cls']
 losses_cls = softmax_loss + tf.add_n(weight_losses_cls)
 ````
 ## Accuracy
-With default configurations the accuracy of the model is around 95% - 98%.
+With default configurations the accuracy of the model is around 97% - 100%.
+![alt text](https://github.com/saravanakumarjsk/Face-Recognition/blob/master/result2.jpg)
+![alt text](https://github.com/saravanakumarjsk/Face-Recognition/blob/master/result.jpg)
+
